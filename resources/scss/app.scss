@@ -1,0 +1,93 @@
+@use './partials/dashboard';
+@use './partials/bubble';
+@use './partials/welcome';
+@use './partials/cardDashboard';
+@use './partials/auth/login';
+@use './partials/auth/register';
+@use './partials/trips/index';
+@use './partials/trips/show';
+@use './partials/trips/create';
+@use './partials/trips/cardShow';
+@use './partials/stops/_formstopscreate';
+@use './partials/stops/stop';
+@use './partials/stops/rating';
+@use './partials/stops/modalEdit';
+@use './partials/stops/note';
+@use './partials/stops/cardStop';
+@use './partials/stops/suggestionPoi';
+
+
+@import '~bootstrap/scss/bootstrap';
+
+body{
+    overflow-x:hidden ;
+}
+.nav-bar-homepage{
+    height: 80px;
+    z-index:10000;
+    position:relative
+}
+.non-clickable {
+    pointer-events: none; /* Disabilita l'interazione del mouse */
+    cursor: not-allowed; /* Cambia il cursore per indicare che l'elemento non è interattivo */
+}
+.color-input{
+    background-color: #2f97ff; 
+}
+.my-suggestion{
+    background-color:#6C757D ;
+    color: white;
+}
+.my-suggestion:hover{
+    background-color: white;
+    color: black;
+}
+
+.ms-edit-stop {
+    color: #f2eb2e;
+}
+
+.ms-edit-stop:hover {
+    color: #e7df08;
+}
+
+.ms-delete-stop {
+    color: #ff0000;
+}
+
+.ms-delete-stop:hover {
+    color: rgb(198, 44, 44);
+}
+
+.ms-logo-home {
+    height: 150px;
+
+    img {
+        height: 100%;
+    }
+}
+
+// css del bottone delle note
+
+.ms-btn-note {
+    font-size: 14px;
+    padding: 16px 14px;
+    background-color: #FDB854;
+    color: black;
+    border-radius: 20px;
+}
+
+.ms-btn-note:hover {
+    transition: 0.4s;
+    font-size: 14px;
+    padding: 16px 14px;
+    background-color: #ff9100;
+    color: rgb(77, 76, 76);
+    border-radius: 20px;
+}
+
+@media screen and (max-width:991px) {
+    .my-padding-display-tel{
+        padding-bottom: 13rem;
+    }
+}

@@ -1,0 +1,80 @@
+.trip-create {
+
+    .my-card {
+        box-shadow:0rem 0rem 2rem 0.5rem rgba(0, 0, 0, 0.402);
+        border-radius: 40px;
+        background: linear-gradient(0deg, rgba(33, 153, 223, 0.222) 0%,rgba(34, 187, 195, 0.262) 40%, rgba(63, 236, 216, 0.411) 100%);
+    }
+
+    h1 {
+        margin-bottom: 40px;
+    }
+
+    label {
+        color: #333;
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    input {
+        font-size: 2.5rem;
+        font-weight: 400;
+        padding: 1rem;
+        border-radius: 10px;    
+    }
+  textarea{
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding: 1.5rem;
+    border-radius: 10px;
+    height: 100px;
+  }
+    .btn-send {
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        width: 80%;
+        margin-left: 3px;
+    }
+
+    .help-block.with-errors {
+        color: #ff5050;
+        margin-top: 5px;
+
+    }
+
+    .card {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    &.disabled {
+        display: none;
+    }
+
+    .send-btn {
+        button {
+            position: relative;
+            padding: 15px 45px;
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            border-radius: 15px;
+            background: none;
+            color: #000;
+            font-weight: 700;
+            font-size: large;
+            background-color: aliceblue;
+            cursor: pointer;
+            outline: none;
+            transition: 200ms;
+            &:hover{
+                background-color:rgb(114, 180, 237) ;
+               color: white;
+            }
+        }
+    }
+   
+}

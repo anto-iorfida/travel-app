@@ -1,0 +1,137 @@
+.trip-show {
+  h1 {
+    font-size: 5rem;
+
+    @media (max-width: 768px) {
+      font-size: 30px;
+    }
+
+    @media (max-width: 420px) {
+      font-size: 30px;
+    }
+  }
+
+  .disabled {
+    display: none;
+  }
+
+  .img-cover {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 2px solid rgb(0, 0, 0);
+  }
+
+  .colorAccordion{
+    background-color: #CCEAF7
+  }
+
+  .colorAccordion:hover{
+    background-color: #74AAEC;
+    background-image: linear-gradient(122deg, #00aeff, #327dcdba);
+  }
+  .color-blue{
+    background-color: #74AAEC;
+    background-image: linear-gradient(122deg, #00aeff, #327dcdba);
+  }
+  .color-green{
+    background-color: rgba(17, 192, 17, 0.842);
+  }
+  .my-fa-circle-plus{
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+  }
+  .my-fa-circle-minus{
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+  }
+  .my-fa-circle-minus:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    color: rgb(210, 217, 12);
+  }
+  .my-fa-circle-plus:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    color: #1166B9;
+  }
+  .my-fa-circle-plus:hover .content-btn{
+    color: #1166B9;
+  }
+  .my-fa-circle-minus:hover .content-btn{
+    color:  rgba(59, 59, 57, 0.663);
+
+  }
+  .accordion {
+    .accordion-btn {
+      position: relative;
+      border: none;
+      padding: 15px 20px;
+      text-align: left;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.379);
+      list-style-image: none;
+
+      &::-webkit-details-marker {
+        background: none;
+        color: transparent;
+      }
+
+      &::after {
+        content: "›";
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        font-size: 35px;
+        font-family: monospace;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        border-radius: 50%;
+        color: #000000;
+        border: 2px solid #000000;
+        transform: translate(0%, -50%) rotate(0deg);
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        padding-bottom: 4px;
+        padding-left: 2px;
+        justify-content: center;
+        font-weight: normal;
+        transition: all .3s ease;
+      }
+    }
+
+    .accordion-content {
+      background-color: #ffffff;
+      box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+
+      // >* {
+      //   padding: 10px 20px;
+      // }
+    }
+
+    &[open] {
+      .accordion-btn::after {
+        transform: translate(0%, -50%) rotate(90deg);
+      }
+
+      summary~* {
+        overflow: hidden;
+        animation: heightUp 1s ease-in-out;
+      }
+    }
+  }
+
+  @keyframes heightUp {
+    0% {
+      max-height: 0;
+    }
+
+    100% {
+      max-height: 2000px;
+    }
+  }
+}

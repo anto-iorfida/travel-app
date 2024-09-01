@@ -1,0 +1,60 @@
+#section-modal {
+    // /* width */
+    // .modal::-webkit-scrollbar {
+    //     width: auto;
+    // }
+
+    // /* Track */
+    // .modal::-webkit-scrollbar-track {
+    //     background-color: #000000;
+    // }
+
+    // /* Handle */
+    // .modal::-webkit-scrollbar-thumb {
+    //     background-color: gray;
+    //     border-radius: 10px;
+    // }
+
+    // .modal::-webkit-scrollbar-thumb:hover {
+    //     background-color: #25d865;
+    // }
+
+    .close span {
+        cursor: pointer;
+    }
+    .my-bg-modal {
+        background-image: url("https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8fA%3D%3D");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+    .my-bg {
+        border-radius: 15px;
+        padding: 2rem;
+        box-shadow: 0 0 18px 10px rgba(0, 0, 0, 0.7);
+        background: linear-gradient(180deg, #ccd8d4b6, #79dbd0be);
+    }
+    .my-bg-edit {
+        border-radius: 15px;
+        padding: 1.5rem;
+        box-shadow: 0 0 12px 5px rgba(0, 0, 0, 0.7);
+        background: linear-gradient(135deg, #b9ffec, #4cb6aa);
+        h1 {
+            font-size: 22px;
+            text-align: center;
+        }
+        label {
+            font-size: 18px;
+        }
+        input {
+            height: 50px;
+            box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+    }
+
+}
+
+#section-edit-stop {
+}

@@ -1,0 +1,78 @@
+#cardDashboard{
+    .card{
+        border-radius: 18px;
+        background: #fff;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.331), 0 0 6px rgba(0, 0, 0, 0.234);
+        // transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+        padding: 14px 20px 18px 36px;
+        cursor: pointer;
+        height: 350px;
+    }
+    
+    // .card:hover{
+    //      transform: scale(1.05);
+    //   box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    // }
+    
+    .card h3{
+      font-weight: 600;
+    }
+    
+
+    
+    .card-1{
+      background-image: url(https://ionicframework.com/img/getting-started/ionic-native-card.png);
+          background-repeat: no-repeat;
+        background-position: right;
+        background-size: 80px;
+    }
+    
+    .card-2{
+       background-image: url(https://ionicframework.com/img/getting-started/components-card.png);
+          background-repeat: no-repeat;
+        background-position: right;
+        background-size: 80px;
+    }
+    
+    .card-3{
+       background-image: url(https://ionicframework.com/img/getting-started/theming-card.png);
+          background-repeat: no-repeat;
+        background-position: right;
+        background-size: 80px;
+    }
+    .card-4{
+       background-image: url(https://cdn-icons-png.flaticon.com/512/2040/2040848.png);
+          background-repeat: no-repeat;
+        background-position: right;
+        background-size: 80px;
+    }
+    .card-5{
+       background-image: url(https://static.vecteezy.com/system/resources/previews/018/742/257/original/3d-minimal-luggage-with-a-passport-airplane-ticket-and-credit-card-holiday-travel-trip-3d-illustration-free-png.png);
+          background-repeat: no-repeat;
+        background-position: right;
+        background-size: 300px;
+    }
+    
+    @media(max-width: 990px){
+      // .card{
+      //   margin: 20px;
+      // }
+    } .paragrafo{
+        font-size: 18px;
+         .countTrip{
+            background-color: #478AFF;
+            border-radius: 100%;
+            min-height: 50px;
+            min-width: 50px;
+            font-size: 25px;
+            color: white;
+            font-weight: 700;
+            display: inline-flex; /* Cambiato da flex a inline-flex */
+            justify-content: center;
+            align-items: center;
+            margin: 0 3px;
+            vertical-align: middle; /* Aggiunto per l'allineamento verticale */
+    }
+    }
+
+}

@@ -1,0 +1,141 @@
+#my-accordion-create {
+    background-color: #f5f7f9;
+}
+
+.my-form-create {
+    text-align: center;
+    padding: 16px;
+
+    button {
+        padding: 1.5rem 5rem;
+        border-radius: 20px;
+        font-size: 2rem;
+        font-weight: 700;
+        background-color: #dbf4f4;
+        box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.43);
+        border: none;
+        outline: none;
+        color: #fff;
+        background: #111;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+
+        &:before {
+            content: '';
+            background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            background-size: 400%;
+            z-index: -1;
+            filter: blur(5px);
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            animation: glowing 20s linear infinite;
+            opacity: 1;
+            transition: opacity .3s ease-in-out;
+            border-radius: 10px;
+        }
+
+        &:hover {
+            color: white;
+        }
+
+        &:active {
+            color: #000000;
+        }
+
+        &:active:after {
+            background: transparent;
+        }
+
+        &:after {
+            z-index: -1;
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #111;
+            left: 0;
+            top: 0;
+            border-radius: 10px;
+        }
+
+        @keyframes glowing {
+            0% {
+                background-position: 0 0;
+            }
+
+            50% {
+                background-position: 400% 0;
+            }
+
+            100% {
+                background-position: 0 0;
+            }
+        }
+    }
+
+    &.card {
+        box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.447);
+        position: relative;
+        background-color: #1eeac81c;
+        padding: 0;
+        &::after {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            opacity: 0.7;
+            background-image: url('https://static.vecteezy.com/system/resources/previews/028/792/646/non_2x/creative-summer-beach-composition-in-suitcase-on-blue-background-a-travel-concept-idea-in-3d-rendering-ai-generative-free-photo.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        h1{
+            &::after{
+                content: '🚩';
+            }
+            &::before{
+                content: '🚩';
+            }
+         }
+    }
+} 
+form,h1,button{
+    position: relative;
+    z-index: 2;
+}
+
+.media991px {
+    textarea{
+        max-height: 4rem;
+    }
+    input,
+    textarea {
+        min-height: 4rem;
+        padding: 1rem 1rem;
+        font-size: 2rem;
+        background-color: #ffffff;
+    }
+    label{
+        font-size: 2rem;
+        font-weight:500 ;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .my-form-create {}
+
+    .media991px {
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+
+        label {
+            font-size: large;
+        }
+    }
+}
